@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            background-color: #E6E6E6;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .content img.default {
+            width: 100%;
+            height: 100%;
+            display: block !important;
+            margin: 0 auto;
+        }
+
+        .warning-sign {
+            width: 28px;
+            height: auto;
+            margin-bottom: -2px;
+        }
+
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #fff;
+            width: 600px;
+            margin: 60px auto;
+        }
+
+        .header img {
+            width: 100%;
+        }
+
+        .header a {
+            width: 481px;
+            height: 92px;
+            margin: 0 auto;
+            display: block;
+            background: transparent linear-gradient(180deg, #000000 0%, #545454 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000040;
+            font-size: 22px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 92px;
+            text-decoration: none;
+        }
+
+        .header p {
+            font-size: 24px;
+        }
+
+        .header img.logo {
+            height: 69px;
+            width: auto;
+            margin-bottom: 12px;
+        }
+
+        .content {
+            padding: 40px 36px;
+            background-color: #fff;
+            width: 600px;
+            margin: 100px auto 0;
+            box-sizing: border-box;
+            box-shadow: 0px 3px 6px #00000022;
+        }
+
+
+        .line {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .bg-black {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+
+        .bg-gray {
+            background-color: #F8F8F8;
+        }
+
+        .text-red {
+            color: #EB4749;
+        }
+
+        .px-md {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .px-lg {
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+
+        .px-xl {
+            padding-left: 44px;
+            padding-right: 44px;
+        }
+
+        .px-2xl {
+            padding-left: 66px;
+            padding-right: 66px;
+        }
+
+        .py-lg {
+            padding-top: 22px;
+            padding-bottom: 22px;
+        }
+
+        .py-xl {
+            padding-top: 44px;
+            padding-bottom: 44px;
+        }
+
+        .py-2xl {
+            padding-top: 88px;
+            padding-bottom: 88px;
+        }
+
+        .my-xl {
+            margin-top: 44px;
+            margin-bottom: 44px;
+        }
+
+        .text-lg {
+            font-size: 24px;
+        }
+
+        .text-xl {
+            font-size: 28px;
+        }
+
+        .line-yellow {
+            display: inline-block;
+            z-index: 1;
+
+        }
+
+        .line-yellow * {
+            z-index: 1;
+            margin-bottom: -20px;
+        }
+
+        .underline {
+            width: 100%;
+            height: 8px;
+            background-color: #F5FF00;
+            display: block;
+            margin-bottom: 0px;
+        }
+
+        .content .button {
+            background-color: #EB4749;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            padding: 18px 44px;
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            font-size: 26px;
+            box-shadow: 0px 3px 6px #00000022;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img class="logo" src="https://night-life.tokyo/wp-content/uploads/2018/03/S_7718528090489.jpg" alt="">
+            <img src="https://night-life.tokyo/wp-content/uploads/2021/02/skyline-255116_640.jpg" alt=""><br><br>
+            <span class="text-red">失敗しない東京夜遊び情報</span>を<br>
+            ナイトビジネスオーナー牧野ヒロがお届け<br><br>
+            <a href="https://night-life.tokyo/">刺激的な夜遊びメディア｜東京ナイトライフ</a><br>
+        </div>
+
+        <div class="content">
+            <div class="line py-lg">
+                <p class="center text-xl">
+                    <img class="warning-sign" src="https://test-images.tomoyuki.tokyo/mark.png" alt="">
+                    <strong>要確認</strong>
+                    <img class="warning-sign" src="https://test-images.tomoyuki.tokyo/mark.png" alt="">
+                </p>
+                <br>
+                <p class="center">
+                    以前はLINEでお問い合わせを受け付けていましたが<br>アカウントが凍結したため現在はテレグラムにて<br>お問い合わせを受け付けております。
+                </p>
+                <br>
+                <a href="https://night-life.tokyo/archives/51549" class="button">ご登録方法はこちらから</a>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <div class="bg-gray px-xl py-xl">
+                <p class="center text-red text-lg">
+                    <strong>スクワットで下半身がムクムクに！？</strong>
+                </p>
+                <br>
+                射精のタイミングがコントロールできず<br>
+                すぐに射精に達してしまう早漏に<br>
+                スポットあてたいと思います。<br>
+                セックスでは相手を満足させてあげたい<br>
+                満足させられなかったらレスの原因に…<br>
+                最悪女性に浮気される原因にも。<br>
+                そもそも早漏とは何なのか<br>
+                なぜ早漏になるのか紹介していきます。
+            </div><br><br>
+            <strong>■PC筋のトレーニング</strong><br><br>
+            <p class="px-md">
+                衰弱性早漏の治し方として<br>
+                PC筋と言われる筋肉を<br>
+                鍛えることが挙げられます。<br>
+                PC筋は骨盤底筋とも言われていて<br>
+                ペニスの根元にある筋肉を指します。<br>
+                PC筋のトレーニングとしては<br>
+                お尻の穴を締めるように<br>
+                10秒間力を入れて休憩<br>
+                というのを数セット<br>
+                繰り返す方法が挙げられます。<br>
+                PC筋は射精に関わる筋肉なので<br>
+                この筋肉を鍛えると射精を遅らせて<br>
+                早漏を改善できるということに加え<br>
+                勃起力を高めることもできます。<br><br>
+                - 後半に続く -
+            </p>
+        </div>
+
+        <div class="content high-padding">
+            <p class="center">
+                <strong class="text-red text-xl">
+                    今回も当然ながらの<br>
+                    ハイクオリティ・ハイスペックの<br>
+                    女性をご紹介です！
+                </strong>
+                <br><br><br>
+            <div class="px-2xl">
+                <p class="text-lg line-yellow">
+                    <strong>・大手事務所新人タレント美女</strong>
+                    <span class="underline"></span>
+                </p>
+                <p class="text-lg line-yellow">
+                    <strong>・色白天然G乳大絶頂美ボディ美女</strong>
+                    <span class="underline"></span>
+                </p> <br><br><br>
+                のレベル高き女性の在籍が決定しました！<br>
+                今週も見逃せない美女をご紹介します！<br><br><br>
+                <div class="center">さらに！</div>
+                <br><br>
+                <div class="center">
+                    <p class="text-xl line-yellow">
+                        <strong>【AV案件】</strong>
+                        <span class="underline"></span>
+                    </p>
+                    &nbsp;
+                    <p class="text-xl line-yellow">
+                        <strong>【芸能案件】</strong>
+                        <span class="underline"></span>
+                    </p>
+                </div>
+                <br><br>
+                <p class="center">
+                    のお知らせも！
+                </p>
+                <br><br>
+            </div>
+
+            <p class="center">
+                お問合せ・ご予約をお待ちしております。
+            </p>
+            </p><br>
+            <a href="https://t.me/VERGUE02" class="button">ご登録方法はこちらから</a>
+        </div>
+
+        <div class="content">
+            <p class="center text-xl">
+                <strong>💋清楚系新人タレント！💋</strong>
+            </p>
+            <br>
+            デビュー前のタレント美女のご紹介です！<br><br>
+
+            某大手芸能事務所よりスカウトされ<br>
+            現在レッスン中のタレント女性です。<br>
+            清楚系なルックスに小顔で細身スタイルの<br>
+            見た目まさにタレントさんです。<br>
+            性格も穏やかで優しくまじめですが、Hに関しては<br>
+            お相手が気持ち良くなってくれると嬉しくなり<br>
+            自分でもスイッチが入り更に没頭するみたいです。<br><br>
+
+            ご予約必至のタレント美女！<br>
+            お問合せはお早めに！<br>
+            ご連絡お待ちしております。<br><br>
+            <p style="text-align: center;">
+                <img src="https://test-images.tomoyuki.tokyo/1.png" alt="">
+            </p>
+            <br>
+            ・倉科優香(22)<br>
+            ・新人タレント<br>
+            ・T164 B82(D) W55 H84<br>
+            ・大手事務所タレント美女<br><br>
+            新人期間限定<br>
+            ・90分14→12万<br>
+            ・120分17→15万<br><br>
+            《日程》<br>
+            2/9、2/11、2/13、2/14<br><br>
+            ️他日程、時間帯はお問合せください<br><br>
+            <a href="https://www.cityheaven.net/tokyo/A1303/A130301/vergue/girlid-51577868/"
+                class="button">詳しいプロフィールはこちら</a>
+        </div>
+
+        <div class="content">
+            <p class="center text-xl">
+                <strong>💋必見のエロむちボディ！！💋</strong>
+            </p>
+            <br>
+            グラビア美女の面接しました！<br>
+            今回もレベル感は⭕️キレカワなお顔も良し！<br>
+            抜群のGカップ究極プロポーションで更に良し！！<br>
+            性格は穏やかでおっとり系ですが<br>
+            男性と2人きりになるとモードが切替わり<br>
+            エロモードになります。<br>
+            キス💋から始まり濃厚プレイに突入<br>
+            これでもかと言うくらいのエロを<br>
+            ご堪能ください！<br><br>
+            日程が限られていますのでお早めの<br>
+            ご予約をオススメいたします。<br><br>
+            <p style="text-align: center;">
+                <img src="https://test-images.tomoyuki.tokyo/2.png" alt="">
+            </p>
+            <br>
+            ・白むち天然Gカップ<br>
+            ・見事なバランスのプロポーション<br>
+            ・キス から始まる濃厚プレイ<br><br>
+            ・神城 澪(23)<br>
+            ・グラビアモデル<br>
+            ・T162 B92(G) W58 H89<br>
+            ・キス💋でトロける濃厚プレイ<br>
+            ・色白天然G乳大絶頂美ボディ美女<br><br>
+            新人期間限定<br>
+            ・90分14→12万<br>
+            ・120分17→15万<br><br>
+            《日程》<br>
+            2/9、2/11、2/13、2/14<br><br>
+            ️⭐️時間帯はお問合せください<br><br>
+            <a href="https://www.cityheaven.net/tokyo/A1303/A130301/vergue/girlid-51576960/"
+                class="button">詳しいプロフィールはこちら</a>
+        </div>
+
+        <div class="content">
+            <div class="bg-gray px-xl py-xl">
+                <p class="center text-xl">
+                    <strong>【 芸能案件 】</strong>
+                </p>
+                <br>
+                <strong>◼︎芸能案件①</strong><br>
+                地上波バラエティなど幅広く活躍している注目の女優•タレントさんです。<br>
+                •地上波テレビ番組でヒロミ・指原と共演した本物芸能人<br><br>
+                <strong>◼︎芸能案件②</strong><br>
+                •ファッションコレクション出演<br>
+                •写真週刊誌『FLASH』グラビア掲載<br><br>
+                <strong>◼︎芸能案件③</strong><br>
+                マジ有名になります！<br>
+                今注目の正統派美少女グラドル<br>
+                今のうちがチャンスです！<br><br>
+                <strong>◼︎芸能案件④</strong><br>
+                🚫トップシークレット案件🚫<br>
+                会員の皆さまから現在も多くの<br>
+                お問合せを頂いております<br>
+                【💋💋川💋い】さん<br>
+                この機会をお見逃しなく！
+            </div>
+            <br>
+            <br>
+            <div class="bg-gray px-xl py-xl">
+                <p class="center text-xl">
+                    <strong>【 AV案件 】</strong>
+                </p>
+                <br>
+                <strong>◼︎AV案件①</strong><br>
+                インフルエンサーとしてYouTubeなどで現在大活躍中！<br><br>
+
+                •元有名ギャル雑誌レギュラーモデル<br>
+                •芸能人AVメーカー「MUTEKI」デビュー<br>
+                •日本一「いい波乗ってる」女 復活！<br><br>
+                <strong>◼︎AV案件②</strong><br>
+                美巨乳 有名セクシー女優 Kさん<br>
+                •銀座ナンバーワンホステスとして<br>
+                『弱冠20歳! 銀座NO.1 Hカップホステスと大型契約 AVデビュー』（E-BODY）2021年にデ
+                ビュー<br>
+                •『週プレアダルトアワード』最優秀新人女優賞受賞<br><br>
+                <strong>◼︎AV案件③</strong><br>
+                この度有名セクシー女優
+                Nさんと繋がりました！<br>
+                最高のボディーをご堪能いただける<br>
+                絶好のチャンスです！
+            </div>
+            <br><br>
+            <p class="px-lg">
+                ヒントはテレグラムに『芸能案件』とメッセージを送ってください。<br>
+                有名女優KさんのAVパッケージ&動画をプレゼントします🎁<br><br>
+            </p>
+            <a href="https://t.me/VERGUE02" class="button">お問い合わせはこちら</a>
+        </div>
+
+        <div class="content">
+            <strong>■普通の筋トレも有効</strong><br><br>
+            <p class="px-md">
+                衰弱性早漏の改善方法として<br>
+                普通の筋トレを行うというのも有効です。<br><br>
+                筋トレを行うと<br>
+                テストステロンというホルモンが分泌され<br>
+                精液が多く作られます。<br><br>
+                筋トレを行うと体力もつくので<br>
+                早漏の予防に繋がります。<br><br>
+                特に有効なトレーニングとしては<br>
+                スクワットが挙げられます。<br><br>
+                スクワットは下半身の筋肉を<br>
+                大きく動員できるので、<br>
+                テストステロンが多く分泌されます。<br><br>
+                またスクワットでは<br>
+                射精に関わるPC筋なども<br>
+                鍛えることができるので<br>
+                非常にオススメです。<br><br><br>
+                以上<br><br>
+                『早漏の治し方を原因から徹底解説！すぐに使える早漏防止テクニックも紹介！ その5』<br><br>
+                でした。<br><br><br>
+                次回は、<br><br>
+                『早漏の治し方を原因から徹底解説！すぐに使える早漏防止テクニックも紹介！ その6』<br><br>
+                について解説していきます。
+            </p>
+        </div>
+
+        <div class="content">
+            <div class="line py-lg">
+                お問い合わせは<br>
+                TEL：03-5544-9930<br>
+                MAIL：このまま返信<br>
+                24時間お待ちしております。
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="center bg-black text-lg">
+                <strong>モデルと遊ぶ。青山ヴェルグ。</strong>
+            </p>
+            <img src="https://night-life.tokyo/wp-content/uploads/2019/12/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2019-12-22-13.15.56.png"
+                alt="" class="default">
+            <br><br>
+            青山会員制「VERGUE - ヴェルグ」は<br>
+            ファッションモデルの<br>
+            スカウトマンが立ち上げた<br>
+            業界でも異例の高級店です。<br>
+            モデル同士で口コミが広まり容姿に<br>
+            自信のある女性ばかりが集まりました。<br>
+            そのため一般応募枠では街で見かける<br>
+            かわいい女の子くらいのルックスでは<br>
+            採用NGにしております。<br><br><br>
+            <p class="center bg-black text-lg">
+                <strong>完全会員制高級交際クラブ｜青山プラウダ</strong>
+            </p>
+            <img src="https://test-images.tomoyuki.tokyo/3.png" alt="" class="default">
+            <br><br>
+            高級交際クラブ「青山プラウダ」は<br>
+            お客様の秘密を守るプロフェショナルである<br>
+            現職プライベートバンカーと<br>
+            小さいながらもTVで活躍するタレントを<br>
+            輩出し続けている芸能プロダクション社長が<br>
+            手を組んで始めた交際クラブです。<br><br><br>
+            <div class="line py-lg">
+                VERGUE問い合わせ専用 Telegram<br>
+                <a href="https://t.me/VERGUE02">https://t.me/VERGUE02</a><br>
+                VERGUE問い合わせ専用LINE<br>
+                <a href="https://line.me/ti/p/55QToMJpF9">https://line.me/ti/p/55QToMJpF9</a><br>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="line py-lg">
+                10億稼いだデリヘルノウハウと<br>
+                最先端ドバイ情報を知りたい方は<br>
+                ぜひフォローよろしくお願いします！<br><br>
+                牧野ヒロ（HIRO） Twitter<br>
+                <a href="https://twitter.com/deliheru_hiro">https://twitter.com/deliheru_hiro</a><br>
+                牧野ヒロ（HIRO） Facebook<br>
+                <a href="https://www.facebook.com/youarecoolguy">https://www.facebook.com/youarecoolguy</a><br>
+                牧野ヒロ（HIRO） Youtube<br>
+                <a
+                    href="https://www.youtube.com/@user-ig3up3wh4j/?sub_confirmation=1">https://www.youtube.com/@user-ig3up3wh4j/?sub_confirmation=1</a><br>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="line py-lg">
+                メルマガの解除はこちらから。<br>
+                ⇒ <a href="https://communion-ex.com/mag/4681/2/">https://communion-ex.com/mag/4681/2/</a><br>
+                一度解除されると再登録が<br>
+                できなくなりますのでお気を付けください。<br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
